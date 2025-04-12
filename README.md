@@ -28,9 +28,9 @@ Esse repositório **não é um container separado**, mas é uma parte essencial 
 
 ## 🔗 Usado por:
 
-- [`backend_produtos`](https://github.com/marcos-grando/backend_produtos): banco de dados + pasta `uploads/`
-- [`backend_categorias`](https://github.com/marcos-grando/backend_categorias): apenas o banco de dados
-- [`backend_compras`](https://github.com/marcos-grando/backend_compras): banco de dados + `uploads/` + `imgs_compras/`
+- [`backend_produtos`](https://github.com/marcos-grando/mv_backend_produtos): banco de dados + pasta `uploads/`
+- [`backend_categorias`](https://github.com/marcos-grando/mvp_backend_categorias): apenas o banco de dados
+- [`backend_compras`](https://github.com/marcos-grando/mvp_backend_compras): banco de dados + `uploads/` + `imgs_compras/`
 
 Cada um desses containers monta esse diretório como volume, pra poder acessar os mesmos dados, imagens e estrutura de banco.
 
@@ -44,11 +44,11 @@ Ele só precisa estar presente na mesma pasta dos outros repositórios quando vo
 ### Estrutura do sistema:
 
 - 🌐 **API externa**: [FakeStore](https://fakestoreapi.com/) → usada para popular a base com produtos fictícios. O modelo `Produto` foi estruturado com base nos dados dessa API (nome, valor, imagem, etc).
-- 🔹 [`backend_categorias`](https://github.com/marcos-grando/backend_categorias) → responsável pelo cadastro e gerenciamento das categorias dos produtos
-- 🔹 [`backend_produtos`](https://github.com/marcos-grando/backend_produtos) → responsável pelo gerenciamento dos produtos (incluindo uploads das imagens dos produtos)
-- 🔹 [`backend_compras`](https://github.com/marcos-grando/backend_compras) → responsável por registrar e consultar compras feitas na loja
+- 🔹 [`backend_categorias`](https://github.com/marcos-grando/mvp_backend_categorias) → responsável pelo cadastro e gerenciamento das categorias dos produtos
+- 🔹 [`backend_produtos`](https://github.com/marcos-grando/mvp_backend_produtos) → responsável pelo gerenciamento dos produtos (incluindo uploads das imagens dos produtos)
+- 🔹 [`backend_compras`](https://github.com/marcos-grando/mvp_backend_compras) → responsável por registrar e consultar compras feitas na loja
 - 🔸 [`backend_shared`] ← Você está nesse repositório
-- 💠 [`frontend`](https://github.com/marcos-grando/frontend) → interface React responsável pela exibição dos produtos, carrinho, compras e painel administrativo, conectando-se às APIs
+- 💠 [`frontend`](https://github.com/marcos-grando/mvp_frontend_bigloja) → interface React responsável pela exibição dos produtos, carrinho, compras e painel administrativo, conectando-se às APIs
 
 ***OBS: `docker-compose`***  
  - O sistema utiliza 3 APIs diferentes, com dependências entre os módulos  
