@@ -28,7 +28,7 @@ Esse repositório **não é um container separado**, mas é uma parte essencial 
 
 ## 🔗 Usado por:
 
-- [`backend_produtos`](https://github.com/marcos-grando/mv_backend_produtos): banco de dados + pasta `uploads/`
+- [`backend_produtos`](https://github.com/marcos-grando/mvp_backend_produtos): banco de dados + pasta `uploads/`
 - [`backend_categorias`](https://github.com/marcos-grando/mvp_backend_categorias): apenas o banco de dados
 - [`backend_compras`](https://github.com/marcos-grando/mvp_backend_compras): banco de dados + `uploads/` + `imgs_compras/`
 
